@@ -1,0 +1,59 @@
+<html>
+    <head>
+	<script src="formChecker.js" defer></script>
+         <title>Ex3</title>
+        <h1 style="text-align: center;" >Welcome to Online Shipping D</h1>   
+        <h2 style="font-size: 20px; text-align:center; color:blue;">"The store of Rugged Phones"</h2> 
+	
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <form id='Storeback' action="customerBackend.php" method="POST">
+            <div class="Products">
+                <div class="Phones">
+                <image src="Phone.jpg" style="height: 400px;"></image>
+                <label> Ulefone Armor 4 ($359.59)</label><br>
+                <input type="number" name="Phone" id="Phone" min="0" size="1">
+            </div>
+            <div class="Phones">
+                <image src="Phone2.jpg" style="height: 400px;"></image>
+                <label> Blackview BV9700 PRO Rugged ($269.49)</label><br>
+                <input type="number" name="Phone2" id="Phone2" min="0" size="1">
+            </div>
+            <div class="Phones">
+                <image src="Phone3.jpg" style="height: 400px;"></image>
+                <label> Dodge S60($300)</label><br>
+                <input type="number" name="Phone3" id="Phone3" min="0" size="1">
+            </div>
+            <div class="Phones">
+                <image src="Phone4.jpg" style="height: 400px;"></image>
+                <label> Kyocera DuaForce Pro ($259.59)</label><br>
+                <input type="number" name="Phone4" id="Phone4" min="0" size="1">
+            </div>
+        </div>
+            <div class="DeliveryMethod">
+                <h3>Delivery Choices:</h3>
+            <input name="choice" type="radio" value="Normal" id="7days"> Free 7 day 
+            <input name="choice" type="radio" value="Express" id="overnight"> $50.00 over night 
+            <input name="choice" type="radio" value="Priority" id="3days"> $5.00 three day 
+                </div>
+
+           <div class="UserInput">
+               <h3>User Login</h3>
+               <label>UserName:</label>
+               <input type="text" class="UserName" name="username" id="username">
+               <br></br><label>Password:</label>
+               <input type="password" class="Password" name="password" id="password">
+               <br></br>
+               <button value="Submit" id="Add">Submit</button>
+               
+               </div>
+            </div>
+        </form>
+        <button value="Reset" id="Reset" onclick="Reset()">Reset</button>
+    </body>
+    <footer>
+        <a href="https://www.facebook.com/shipping46">Facebook Page</a>
+    </footer>
+</html>
